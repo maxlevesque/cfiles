@@ -22,7 +22,7 @@ git clone --recursive https://github.com/chemfiles/cfiles
 cd cfiles
 mkdir build
 cd build
-cmake ..
+cmake -DCMAKE_INSTALL_PREFIX=. .. # this will build cfiles in the local dir
 make install
 ```
 
